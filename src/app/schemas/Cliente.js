@@ -13,7 +13,7 @@ const ClienteSchema = new mongoose.Schema(
             required: true,
         },
         favorite: {
-            type: FavoritoSchema,
+            type: [FavoritoSchema],
             required: false,
         },
     },

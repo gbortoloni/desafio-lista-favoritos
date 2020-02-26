@@ -26,7 +26,7 @@ class ClienteController {
         });
 
         if (!(await schema.isValid(req.body))) {
-            return res.status(400).json({ error: 'Validation falied.' });
+            return res.status(400).json({ error: 'Validation failed.' });
         }
 
         const clienteExists = await Cliente.findOne({
@@ -49,7 +49,7 @@ class ClienteController {
         });
 
         if (!(await schema.isValid(req.body))) {
-            return res.status(400).json({ error: 'Validation falied.' });
+            return res.status(400).json({ error: 'Validation failed.' });
         }
 
         const { id } = req.params;

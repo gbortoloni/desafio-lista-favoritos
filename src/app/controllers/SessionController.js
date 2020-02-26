@@ -13,7 +13,7 @@ class SessionController {
         });
 
         if (!(await schema.isValid(req.body))) {
-            return res.status(400).json({ error: 'Validation falied.' });
+            return res.status(400).json({ error: 'Validation failed.' });
         }
 
         const cliente = await Cliente.findOne({
